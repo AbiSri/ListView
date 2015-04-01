@@ -8,7 +8,7 @@ import android.widget.ListView;
 
 public class MainActivity extends ActionBarActivity {
 
-    String color_names[] = {"Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Grey", "White"};
+    String color_names[] = {"Black", "Brown", "Red", "Orange", "Yellow", "Green", "Blue", "Violet", "Gray", "White"};
     Integer image_id[] = {R.drawable.color_black, R.drawable.color_brown, R.drawable.color_red, R.drawable.color_orange, R.drawable.color_yellow, R.drawable.color_green, R.drawable.color_blue, R.drawable.color_violet, R.drawable.color_grey, R.drawable.color_white};
 
     @Override
