@@ -1,94 +1,62 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:gravity="center"
+    android:orientation="vertical"
+    android:gravity="top|center"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin" >
+    android:paddingRight="@dimen/activity_horizontal_margin">
 
     <LinearLayout
-        android:gravity="center_horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
 
         <ListView
             android:id="@+id/listView1"
             android:layout_width="@dimen/box_width"
             android:layout_height="@dimen/listview_height"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
             android:choiceMode="singleChoice"
-            android:scrollbars="none"
-            android:gravity="center">
-        </ListView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+            android:gravity="top|center"
+            android:scrollbars="none"></ListView>
 
         <ListView
             android:id="@+id/listView2"
             android:layout_width="@dimen/box_width"
             android:layout_height="@dimen/listview_height"
             android:choiceMode="singleChoice"
-            android:scrollbars="none"
-            android:gravity="center">
-        </ListView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+            android:gravity="top|center"
+            android:scrollbars="none"></ListView>
 
         <ListView
-            android:id="@+id/listView2"
+            android:id="@+id/listView3"
             android:layout_width="@dimen/box_width"
             android:layout_height="@dimen/listview_height"
             android:choiceMode="singleChoice"
-            android:scrollbars="none"
-            android:gravity="center">
-        </ListView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
+            android:gravity="top|center"
+            android:scrollbars="none"></ListView>
 
         <ListView
             android:id="@+id/listView4"
             android:layout_width="@dimen/box_width"
             android:layout_height="@dimen/listview_height"
             android:choiceMode="singleChoice"
-            android:scrollbars="none"
-            android:gravity="center">
-        </ListView>
+            android:gravity="top|center"
+            android:scrollbars="none"></ListView>
     </LinearLayout>
 
 
-
     <TextView
+        android:id="@+id/color_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Medium Text"
-        android:textSize="30sp"
-        android:id="@+id/color_text"
-        android:layout_below="@+id/listView"
-        android:layout_marginTop="400dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="Medium"
+        android:textSize="30sp" />
 
 </LinearLayout>
